@@ -18,3 +18,7 @@ To estimate the **causal effect** (Average Treatment Effect - ATE) of a new chec
 
 ---
 
+## Dataset Used
+
+- Ecommerce AB Testing 20222 Dataset1
+  https://www.kaggle.com/datasets/putdejudomthai/ecommerce-ab-testing-2022-dataset1
