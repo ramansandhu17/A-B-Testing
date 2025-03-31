@@ -1,4 +1,4 @@
-# 🧪 A/B Test Summary: Checkout Page Redesign
+# A/B Test Summary: Checkout Page Redesign
 
 ## Objective
 
