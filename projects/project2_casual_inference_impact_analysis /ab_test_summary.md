@@ -35,4 +35,25 @@ We wanted to check whether user **country** was affecting the assignment to trea
 To control for that, we used **Propensity Score Matching**:
 - We estimated the probability (propensity score) of being in the treatment group based on country.
 - Then we matched each user in the treatment group with a user in the control group with a similar propensity score.
-- This gave us more comparable groups — users with similar likelihoods
+- This gave us more comparable groups — users with similar likelihoods of being treated based on observable data.
+
+---
+
+## Matched Results
+
+After matching users on country:
+
+- Treated group conversion rate: 11.88%
+- Matched control group conversion rate: 24.85%
+- ATE after matching: -12.97 percentage points
+
+**Interpretation**:  
+Once we made the groups more comparable, we saw a much stronger negative effect. Users who were similar to each other, but received different versions of the checkout page, converted at very different rates — and the new design performed significantly worse.
+
+---
+
+## Final Takeaway
+
+At first glance, it looked like the new checkout page didn’t really change anything. But after adjusting for country differences, we found that the new design may actually reduce conversions by quite a bit.
+
+This project shows why it’s important to look deeper — randomization doesn’t always work out perfectly, and causal inference methods like Propensity Score Matching can help uncover the real story.
